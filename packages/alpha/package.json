@@ -1,0 +1,30 @@
+{
+  "name": "@kazuya-k-ishibashi/test-node-lib-alpha",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kazuya-k-ishibashi/test-node-lib-multi",
+    "directory": "packages/alpha"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "run-s build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.33",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.2.3"
+  }
+}
